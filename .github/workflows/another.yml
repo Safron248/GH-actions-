@@ -6,7 +6,8 @@ On:
   
   # workflow_dispatch:
 
-  issues: opened
+  issues: 
+    types: [opened]
 
 jobs:   
   test:
@@ -14,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
       - name: run lint 
-        run: echo Test
+        run: echo ${{ github }}
   
