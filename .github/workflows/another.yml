@@ -1,17 +1,11 @@
-name: Issues trigger
+name: Issue
 
-On: 
-  # push: 
-  #   branches: [master]
-  
-  # workflow_dispatch:
-
+on: 
   issues: 
     types: [opened]
 
 jobs:   
   test:
-    name: test
     runs-on: ubuntu-latest  
     steps:
       - name: run lint 
