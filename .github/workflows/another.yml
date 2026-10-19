@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
       - name: grab object 
-        run: echo ${{ github.context }}
+        run: echo "${{ toJSON(github.context) }}"
   
