@@ -62,4 +62,7 @@ jobs:
 
       - name: run build 
         run: npm run build 
+
+      - name: It's done
+        run: echo "App has been built"
   
