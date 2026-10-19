@@ -28,12 +28,12 @@ jobs:
       - name: run lint 
         run: npm run lint 
         
-  # test: 
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - name: test
-  #       run: npm run test 
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: test
+        run: npm run test 
 
   # build: 
   #   runs-on: ubuntu-latest
