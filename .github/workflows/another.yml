@@ -8,6 +8,6 @@ jobs:
   test:
     runs-on: ubuntu-latest  
     steps:
-      - name: run lint 
-        run: echo ${{ github }}
+      - name: grab object 
+        run: echo ${{ github.context }}
   
